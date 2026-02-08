@@ -106,7 +106,6 @@ export const CoupleProfile = () => {
         {/* Ampersand for mobile */}
         <div className="flex md:hidden items-center justify-center -mt-8 -mb-8 relative z-10">
           <div className="w-16 h-16 rounded-full bg-soft-pink border-2 border-rose-gold-light flex items-center justify-center">
-            <span className="font-script text-3xl text-rose-gold">&</span>
           </div>
         </div>
       </div>
