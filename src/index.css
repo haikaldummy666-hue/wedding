@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Wedding Invitation Theme - Soft Pink & Rose Gold */
+
+@layer base {
+  :root {
+    /* Soft Pink & Rose Gold Theme */
+    --background: 350 100% 98%;
+    --foreground: 350 40% 20%;
+
+    --card: 350 60% 97%;
+    --card-foreground: 350 40% 20%;
+
+    --popover: 350 60% 97%;
+    --popover-foreground: 350 40% 20%;
+
+    /* Rose Gold as Primary */
+    --primary: 350 35% 55%;
+    --primary-foreground: 350 100% 98%;
+
+    /* Soft Pink as Secondary */
+    --secondary: 350 60% 92%;
+    --secondary-foreground: 350 40% 25%;
+
+    --muted: 350 30% 90%;
+    --muted-foreground: 350 20% 45%;
+
+    /* Rose Gold Accent */
+    --accent: 350 40% 72%;
+    --accent-foreground: 350 40% 15%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 350 30% 85%;
+    --input: 350 30% 85%;
+    --ring: 350 35% 55%;
+
+    --radius: 0.75rem;
+
+    /* Custom Wedding Colors */
+    --rose-gold: 350 35% 55%;
+    --rose-gold-light: 350 40% 72%;
+    --soft-pink: 350 60% 92%;
+    --soft-pink-dark: 350 50% 85%;
+    --cream: 40 30% 96%;
+    --maroon: 350 50% 25%;
+    --gold: 40 70% 50%;
+
+    --sidebar-background: 350 60% 97%;
+    --sidebar-foreground: 350 40% 20%;
+    --sidebar-primary: 350 35% 55%;
+    --sidebar-primary-foreground: 350 100% 98%;
+    --sidebar-accent: 350 60% 92%;
+    --sidebar-accent-foreground: 350 40% 20%;
+    --sidebar-border: 350 30% 85%;
+    --sidebar-ring: 350 35% 55%;
+  }
+
+  .dark {
+    --background: 350 30% 8%;
+    --foreground: 350 30% 95%;
+
+    --card: 350 30% 12%;
+    --card-foreground: 350 30% 95%;
+
+    --popover: 350 30% 12%;
+    --popover-foreground: 350 30% 95%;
+
+    --primary: 350 35% 60%;
+    --primary-foreground: 350 30% 10%;
+
+    --secondary: 350 30% 20%;
+    --secondary-foreground: 350 30% 95%;
+
+    --muted: 350 30% 18%;
+    --muted-foreground: 350 20% 65%;
+
+    --accent: 350 35% 25%;
+    --accent-foreground: 350 30% 95%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 350 30% 20%;
+    --input: 350 30% 20%;
+    --ring: 350 35% 60%;
+
+    --sidebar-background: 350 30% 10%;
+    --sidebar-foreground: 350 30% 95%;
+    --sidebar-primary: 350 35% 60%;
+    --sidebar-primary-foreground: 350 30% 10%;
+    --sidebar-accent: 350 30% 18%;
+    --sidebar-accent-foreground: 350 30% 95%;
+    --sidebar-border: 350 30% 20%;
+    --sidebar-ring: 350 35% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Cormorant Garamond', serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .font-script {
+    font-family: 'Great Vibes', cursive;
+    line-height: 1.4;
+    padding-top: 0.15em;
+    padding-bottom: 0.1em;
+  }
+
+  .font-serif {
+    font-family: 'Cormorant Garamond', serif;
+  }
+
+  .font-sans {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  /* Falling petals animation */
+  @keyframes fall {
+    0% {
+      transform: translateY(-10vh) rotate(0deg) translateX(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(110vh) rotate(720deg) translateX(100px);
+      opacity: 0.3;
+    }
+  }
+
+  @keyframes sway {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(30px);
+    }
+  }
+
+  .petal {
+    animation: fall linear infinite, sway ease-in-out infinite;
+  }
+
+  /* Fade in on scroll animation */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+  }
+
+  /* Gradient overlay */
+  .gradient-overlay {
+    background: linear-gradient(
+      180deg,
+      hsl(var(--soft-pink) / 0.3) 0%,
+      hsl(var(--background)) 100%
+    );
+  }
+
+  /* Rose gold gradient text */
+  .text-gradient {
+    background: linear-gradient(
+      135deg,
+      hsl(var(--rose-gold)) 0%,
+      hsl(var(--gold)) 50%,
+      hsl(var(--rose-gold)) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Decorative border */
+  .decorative-border {
+    border: 2px solid hsl(var(--rose-gold-light));
+    position: relative;
+  }
+
+  .decorative-border::before {
+    content: '';
+    position: absolute;
+    inset: 4px;
+    border: 1px solid hsl(var(--rose-gold-light) / 0.5);
+  }
+
+  /* Glass effect card */
+  .glass-card {
+    background: hsl(var(--card) / 0.8);
+    backdrop-filter: blur(10px);
+    border: 1px solid hsl(var(--border) / 0.5);
+  }
+
+  /* Floral frame */
+  .floral-frame {
+    position: relative;
+  }
+
+  .floral-frame::before,
+  .floral-frame::after {
+    content: '❀';
+    position: absolute;
+    font-size: 1.5rem;
+    color: hsl(var(--rose-gold-light));
+  }
+
+  .floral-frame::before {
+    top: -0.75rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .floral-frame::after {
+    bottom: -0.75rem;
+    left: 50%;
+    transform: translateX(-50%) rotate(180deg);
+  }
+
+  /* Pulse animation for countdown */
+  @keyframes pulse-soft {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+  }
+
+  .animate-pulse-soft {
+    animation: pulse-soft 2s ease-in-out infinite;
+  }
+
+  /* Button hover effect */
+  .btn-wedding {
+    @apply relative overflow-hidden transition-all duration-300;
+  }
+
+  .btn-wedding::before {
+    content: '';
+    @apply absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease;
+  }
+
+  .btn-wedding:hover::before {
+    transform: translateX(100%);
+  }
+
+  /* Section divider */
+  .section-divider {
+    @apply flex items-center justify-center gap-4 my-8;
+  }
+
+  .section-divider::before,
+  .section-divider::after {
+    content: '';
+    @apply h-px w-16 md:w-24 bg-gradient-to-r from-transparent via-primary/50 to-transparent;
+  }
+
+  /* Timeline connector */
+  .timeline-connector {
+    @apply absolute left-1/2 top-0 bottom-0 w-0.5 -translate-x-1/2;
+    background: linear-gradient(
+      to bottom,
+      hsl(var(--rose-gold-light)),
+      hsl(var(--rose-gold)),
+      hsl(var(--rose-gold-light))
+    );
+  }
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 0 2px 10px hsl(var(--foreground) / 0.1);
+  }
+
+  .text-shadow-lg {
+    text-shadow: 0 4px 20px hsl(var(--foreground) / 0.2);
+  }
+}
