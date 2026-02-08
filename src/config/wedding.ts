@@ -35,14 +35,14 @@ export const weddingConfig = {
     date: "Selasa, 24 Maret 2026",
     time: "09:00 - 10:00 WIB",
     venue: "Kediaman Mempelai Wanita",
-    address: "Kp. Bitung Rt220/04 Desa Cicareuh Kecamatan Cikidang Kabupaten Sukabumi",
+    address: "Kp. Bitung Rt20/04 Desa Cicareuh Kecamatan Cikidang Kabupaten Sukabumi",
     mapsLink: "https://www.google.com/maps/place/6%C2%B054'45.0%22S+106%C2%B041'43.7%22E/@-6.912501,106.695467,1133m/data=!3m2!1e3!4b1!4m4!3m3!8m2!3d-6.912501!4d106.695467!17m2!4m1!1e3!18m1!1e1?entry=ttu&g_ep=EgoyMDI2MDIwNC4wIKXMDSoKLDEwMDc5MjA2OUgBUAM%3D",
   },
   resepsi: {
     date: "Selasa, 24 Maret 2026",
     time: "11:00 - 15:00 WIB",
     venue: "Kediaman Mempelai Wanita",
-    address: "Kp. Bitung Rt220/04 Desa Cicareuh Kecamatan Cikidang Kabupaten Sukabumi",
+    address: "Kp. Bitung Rt20/04 Desa Cicareuh Kecamatan Cikidang Kabupaten Sukabumi",
     mapsLink: "https://www.google.com/maps/place/6%C2%B054'45.0%22S+106%C2%B041'43.7%22E/@-6.912501,106.695467,1133m/data=!3m2!1e3!4b1!4m4!3m3!8m2!3d-6.912501!4d106.695467!17m2!4m1!1e3!18m1!1e1?entry=ttu&g_ep=EgoyMDI2MDIwNC4wIKXMDSoKLDEwMDc5MjA2OUgBUAM%3D",
   },
 
@@ -114,7 +114,7 @@ export const weddingConfig = {
   // Gift Address
   giftAddress: {
     name: "Novi & Haikal",
-    address: "Kp. Bitung Rt220/04 Desa Cicareuh Kecamatan Cikidang Kabupaten Sukabumi",
+    address: "Kp. Bitung Rt20/04 Desa Cicareuh Kecamatan Cikidang Kabupaten Sukabumi",
     city: "Sukabumi",
     phone: "+62 8232156 48140",
   },
