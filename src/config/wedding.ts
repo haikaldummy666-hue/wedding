@@ -17,14 +17,14 @@ export const weddingConfig = {
     fullName: "Novi Ramadaniawati",
     father: "Bapak Sastra Wijaya",
     mother: "Ibu Ai Santi",
-    photo: "/src/assets/images/novi.jpeg",
+    photo: "/assets/images/novi.jpeg",
   },
   groom: {
     name: "Haikal",
     fullName: "Haikal Muhammad",
     father: "Bapak Jimmi Kurniawan",
     mother: "Ibu Yanti Nuryanti",
-    photo: "/src/assets/images/haikal.jpeg",
+    photo: "/assets/images/haikal.jpeg",
   },
 
   // Wedding Date
@@ -76,16 +76,16 @@ export const weddingConfig = {
 
   // Gallery Photos
   gallery: [
-    "/src/assets/images/g1.jpeg",
-    "/src/assets/images/g2.jpeg",
-    "/src/assets/images/g3.jpeg",
-    "/src/assets/images/g4.jpeg",
-    "/src/assets/images/g5.jpeg",
-    "/src/assets/images/g6.jpeg",
+    "/assets/images/g1.jpeg",
+    "/assets/images/g2.jpeg",
+    "/assets/images/g3.jpeg",
+    "/assets/images/g4.jpeg",
+    "/assets/images/g5.jpeg",
+    "/assets/images/g6.jpeg",
   ],
 
   // Couple Main Photo
-  couplePhoto: "/src/assets/images/weding.jpg",
+  couplePhoto: "/assets/images/weding.jpg",
 
   // Wedding Gift / Bank Accounts (4 akun)
   bankAccounts: [
@@ -120,7 +120,7 @@ export const weddingConfig = {
   },
 
   // Background Music
-  backgroundMusic: "/src/assets/music/lagu.mp3",
+  backgroundMusic: "/assets/music/lagu.mp3",
 
   // Quran Quote
   quranQuote: {
