@@ -103,9 +103,7 @@ export const CoupleProfile = () => {
           <ProfileCard type="groom" delay={400} />
         </div>
 
-        {/* Ampersand for mobile */}
-          </div>
-        </div>
+        {/* Mobile ampersand removed */}
       </div>
     </section>
   );
