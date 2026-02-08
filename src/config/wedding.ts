@@ -85,7 +85,7 @@ export const weddingConfig = {
   ],
 
   // Couple Main Photo
-  couplePhoto: "/assets/images/weding.jpg",
+  couplePhoto: "/assets/images/weding.jpeg",
 
   // Wedding Gift / Bank Accounts (4 akun)
   bankAccounts: [
