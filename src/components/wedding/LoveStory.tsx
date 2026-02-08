@@ -22,9 +22,9 @@ const TimelineItem = ({ item, index, isLast }: TimelineItemProps) => {
       style={{ transitionDelay: `${index * 200}ms` }}
     >
       {/* Desktop layout */}
-      <div className={`hidden md:flex w-full items-center ${isEven ? "flex-row" : "flex-row-reverse"}`}>
+      <div className={`hidden md:flex w-full items-center justify-center`}>
         {/* Content */}
-        <div className={`w-5/12 ${isEven ? "text-right pr-8" : "text-left pl-8"}`}>
+        <div className={`w-full max-w-2xl text-center`}>
           <div className="glass-card p-6 rounded-xl inline-block">
             <span className="text-sm font-sans uppercase tracking-wider text-primary">
               {item.date}
@@ -39,24 +39,13 @@ const TimelineItem = ({ item, index, isLast }: TimelineItemProps) => {
         </div>
 
         {/* Center dot */}
-        <div className="w-2/12 flex justify-center relative">
+        <div className="absolute left-1/2 -translate-x-1/2 flex justify-center relative">
           <div className="w-12 h-12 rounded-full bg-soft-pink border-4 border-rose-gold-light flex items-center justify-center z-10">
             <span className="text-lg">💕</span>
           </div>
           {!isLast && (
             <div className="absolute top-12 bottom-[-3rem] left-1/2 w-0.5 -translate-x-1/2 bg-gradient-to-b from-rose-gold-light to-rose-gold-light/30" />
           )}
-        </div>
-
-        {/* Photo */}
-        <div className={`w-5/12 ${isEven ? "pl-8" : "pr-8"}`}>
-          <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-rose-gold-light/50 shadow-lg mx-auto">
-            <img
-              src={item.photo}
-              alt={item.title}
-              className="w-full h-full object-cover"
-            />
-          </div>
         </div>
       </div>
 
@@ -75,22 +64,13 @@ const TimelineItem = ({ item, index, isLast }: TimelineItemProps) => {
         {/* Content */}
         <div className="flex-1 pb-8">
           <div className="glass-card p-4 rounded-xl">
-            <div className="flex items-center gap-3 mb-3">
-              <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-rose-gold-light/50 flex-shrink-0">
-                <img
-                  src={item.photo}
-                  alt={item.title}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div>
-                <span className="text-xs font-sans uppercase tracking-wider text-primary">
-                  {item.date}
-                </span>
-                <h3 className="font-script text-xl text-gradient">
-                  {item.title}
-                </h3>
-              </div>
+            <div className="mb-3">
+              <span className="text-xs font-sans uppercase tracking-wider text-primary">
+                {item.date}
+              </span>
+              <h3 className="font-script text-xl text-gradient mt-1">
+                {item.title}
+              </h3>
             </div>
             <p className="font-serif text-muted-foreground text-sm">
               {item.description}
