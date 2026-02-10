@@ -61,6 +61,7 @@ export const OpeningScreen = ({ onOpen, guestName }: OpeningScreenProps) => {
         {/* Guest name */}
         {guestName && (
           <div className="mb-8 p-4 glass-card rounded-lg">
+            <p className="text-sm text-muted-foreground mb-1">Kami Turut Mengundang</p>
             <p className="text-sm text-muted-foreground mb-1">Kepada Yth.</p>
             <p className="font-serif text-xl font-semibold">{guestName}</p>
           </div>
