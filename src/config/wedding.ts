@@ -22,8 +22,8 @@ export const weddingConfig = {
   groom: {
     name: "Haikal",
     fullName: "Haikal Muhammad Kurniawan",
-    father: "Bapak Jimmi Kurniawan",
-    mother: "Ibu Yanti Nuryanti",
+    father: "Bapak Jimmi Kurniawan, S.Pd.I., M.Pd",
+    mother: "Ibu Yanti Nuryanti, S.Pd.I",
     photo: "/assets/images/haikal.jpeg",
   },
 
