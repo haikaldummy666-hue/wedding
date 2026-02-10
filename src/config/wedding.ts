@@ -50,7 +50,7 @@ export const weddingConfig = {
   loveStory: [
     {
       title: "Awal Bertemu",
-      date: "Januari 2020",
+      date: "Januari 2023",
       description: "Pertemuan pertama kami di facebook. Saat itu, tanpa disadari takdir mulai mempertemukan kami.",
       photo: "/placeholder.svg",
     },
