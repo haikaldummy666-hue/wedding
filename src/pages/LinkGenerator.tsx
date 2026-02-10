@@ -48,7 +48,7 @@ ${weddingConfig.bride.name} & ${weddingConfig.groom.name}`;
     const links = nameList.map((name) => {
       // Encode the name for URL safety
       const encodedName = encodeURIComponent(name);
-      const url = `${baseUrl}/?to=${encodedName}`;
+      const url = `${baseUrl}/?to=${encodedName}&v=1`;
       return {
         name,
         url,
