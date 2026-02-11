@@ -116,7 +116,6 @@ export const weddingConfig = {
     name: "Novi",
     address: "Kp. Bitung Rt20/04 Desa Cicareuh Kecamatan Cikidang Kabupaten Sukabumi",
     phone: "+62823215648140",
-  giftAddress: {
     name: "Haikal",
     address: "Kp. Cimahipeuntas Rt.033/007 Desa Cibolang Kaler Kecamatan Cisaat Kabupaten Sukabumi",
     phone: "+6283808283542",
