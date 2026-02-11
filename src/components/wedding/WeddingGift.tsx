@@ -110,20 +110,21 @@ export const WeddingGift = () => {
                 Kirim Kado
               </h3>
               
-              <div className="flex items-start justify-center gap-2 text-left max-w-md mx-auto">
-                <MapPin className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                <div className="font-serif">
-                  <p className="font-semibold">{weddingConfig.giftAddress.name}</p>
-                  <p className="text-muted-foreground text-sm">
-                    {weddingConfig.giftAddress.address}
-                  </p>
-                  <p className="text-muted-foreground text-sm">
-                    {weddingConfig.giftAddress.city}
-                  </p>
-                  <p className="text-muted-foreground text-sm">
-                    {weddingConfig.giftAddress.phone}
-                  </p>
-                </div>
+              <div className="space-y-6">
+                {weddingConfig.giftAddress.map((address, index) => (
+                  <div key={index} className="flex items-start justify-center gap-2 text-left max-w-md mx-auto border-b border-rose-gold-light/20 pb-4 last:border-0 last:pb-0">
+                    <MapPin className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    <div className="font-serif">
+                      <p className="font-semibold">{address.name}</p>
+                      <p className="text-muted-foreground text-sm">
+                        {address.address}
+                      </p>
+                      <p className="text-muted-foreground text-sm">
+                        {address.phone}
+                      </p>
+                    </div>
+                  </div>
+                ))}
               </div>
             </CardContent>
           </Card>
