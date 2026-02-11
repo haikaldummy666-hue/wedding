@@ -50,7 +50,7 @@ export const weddingConfig = {
   loveStory: [
     {
       title: "Awal Bertemu",
-      date: "Januari 2023",
+      date: "Januari 2020",
       description: "Pertemuan pertama kami di facebook. Saat itu, tanpa disadari takdir mulai mempertemukan kami.",
       photo: "/placeholder.svg",
     },
@@ -62,7 +62,7 @@ export const weddingConfig = {
     },
     {
       title: "Lamaran",
-      date: "Februari 2026",
+      date: "Januari 2026",
       description: "Dengan restu kedua orang tua, kami memutuskan untuk melangkah ke jenjang yang lebih serius.",
       photo: "/placeholder.svg",
     },
@@ -111,19 +111,19 @@ export const weddingConfig = {
     },
   ],
 
-// Gift Address (2 orang dalam 1 object)
-giftAddress: {
-  novi: {
-    name: "Novi",
-    address: "Kp. Bitung Rt20/04 Desa Cicareuh Kecamatan Cikidang Kabupaten Sukabumi",
-    phone: "+62823215648140",
-  },
-  haikal: {
-    name: "Haikal",
-    address: "Kp. Cimahipeuntas Rt.033/007 Desa Cibolang Kaler Kecamatan Cisaat Kabupaten Sukabumi",
-    phone: "+6283808283542",
-  },
-},
+  // Gift Address
+  giftAddress: [
+    {
+      name: "Novi",
+      address: "Kp. Bitung Rt20/04 Desa Cicareuh Kecamatan Cikidang Kabupaten Sukabumi",
+      phone: "+62823215648140",
+    },
+    {
+      name: "Haikal",
+      address: "Kp. Cimahipeuntas Rt.033/007 Desa Cibolang Kaler Kecamatan Cisaat Kabupaten Sukabumi",
+      phone: "+6283808283542",
+    },
+  ],
 
   // Background Music
   backgroundMusic: "/assets/music/lagu.mp3",
